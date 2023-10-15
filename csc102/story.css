@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+}
+/* using external css to control font size all paragraghs*/
+p {
+  font-size: 22px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+}

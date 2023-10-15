@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Information</title>
+</head>
+<link rel="stylesheet" type="text/css" href="more info.css">
+
+<!---using a div class to contain the nav bar-->
+    <div class= "container">
+        <nav>
+            <ul>
+                <li><a href= "Index.html"</a>HOME</a></li>
+                <li><a href= "https://www.studynovels.com/Book/BookListByCategory?cat=5 "</a> READ MORE</a></li>
+                
+            </ul>
+        </nav>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!---------------codes for animated text-------------------------------------------------->
+              
+<body>
+<!------------------Creat a div clas for text-box and the generic inline span tag to contain content within it
+    for easier to control in animation effect, making them all do similarly----------->
+    <div class= " text-box">
+        <span>W</span>
+        <span>E</span>
+        <span>L</span>
+        <span> C</span>
+        <span> O</span>
+        <span>M</span>
+        <span>E</span>
+           
+    </div>
+ 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="water.jpg" alt="water" class="center">
+    <!-- using css tag tag to control the image-->
+    <style>
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+    </style>
+    <br>
+    <!---using inline css to control and design sub-headings-->
+    <h3 style= " text-align: center; color:turquoise; font-size: 50px;"> Water Hauting</h3>
+    <h4 style= "text-align: center;font-style: italic;"> Story Synopsis</h4>
+    <br>
+
+<!-- using inline css to design parts of the paragraghs-->
+    <p style= "text-indent: 45px;color:rosybrown">
+    The Western region in Vietnam is known as the Nine Dragon River Delta, literally or the Mekong Delta River.
+    Life in the Mekong Delta revolves very much around them.   
+    The equatorial monsoon climate regime produces high temperatures all year round and heavy rainfall.
+    Years ago, the local children enjoyed playing in the water and rain.  
+    Seven-year-old Phuong lived with her family and a two-year-old brother named Tuan. 
+    They both loved playing in the water.
+    One day, something happened to little Tuan that would haunt Phuong and make water the source of great fear for the rest of her life.
+    </p>
+    <p style= "text-indent: 45px;color:rosybrown">
+    In a hot, typical morning, Phuong and her family suddenly noticed that Tuan wasn’t in the house.
+    Everyone rushed out to find him in different directions. Phuong ran out on a small path that led to a big river.
+    She saw something on the riverbank and immediately ran towards it. 
+    To Phuong’s horror, they were Tuan’s clothes. Instantly, Phuong’s eyes turned into the water.
+    There was a frightening image that she would never forget. 
+    Tuan was struggling in the water face down. 
+    Without thinking, Phuong jumped into the big deep river to save Tuan, forgetting that she didn’t know how to swim…
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+     <p style= "text-align: center; font-style: italic;"> Please fill out the form below to access the completed story</p>
+<!-----------------------codes for the login form----------------------------------------------->
+    <!-- creating a log in form with different id for easy to control each element separated-->
+	<div class="container">
+		<h1 class="label">Next Page</h1>
+		<form class="login_form" action="Story.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Full Name</div>
+			<input autocomplete="off" type="text" name="fname">
+			<div id="fname_error">Name must be 5 - 20 characters</div>
+			<div class="font font2">E-mail</div>
+			<input type="email" name="email">
+			<div id="pass_error">Email must be letters</div>
+			<button type="submit">Go</button>
+		</form>
+	</div>	
+    <!--link the script tag below the form so that it loads correctly-->
+	<script src="more info.js"></script>
+
+</body>
+    
+</html>

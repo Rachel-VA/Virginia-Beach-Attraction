@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virginia Beach</title>
+</head>
+
+    <!--using inline css to control and design the headings-->
+    <h1 style= "color:brown; text-align: center; font-size: 60px;">WELCOME TO VIRGINIA BEACH</h1>
+    <h2 style= "color:green; text-align:center; font-size: 40px;"> The City of Beaches and Military</h2>
+        <h3 style= "color:darkcyan; text-align: center;"> 
+        
+
+    
+<body>
+    <!-- creating a responsive navigation bar-->
+    <!--reference:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- using text style css to design for the nav bar and its content-->
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /* creating a class to design for the bar only*/
+    .navbar {
+      overflow: hidden;
+      background-color:rgb(247, 10, 140);
+      font-size: 20px;
+      
+    }
+    /* create a class to design the text within the nav bar, using float property*/
+    .navbar a {
+      float: right;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* creating a class to design for the dropdown  */
+    .dropdown {
+      float: right;
+      overflow: hidden;
+    }
+    /* designing for the dropdown button*/
+    
+    .dropdown .dropbtn {
+      font-size: 20px; 
+      font-weight: bolder; 
+      border: none;
+      outline: none;
+      color: blue;
+      padding: 14px 16px;
+      background-color:greenyellow;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:lightseagreen;
+    }
+    /**** design for the content within the dropdown only****/
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: yellow;
+      min-width: 148px;
+      z-index: 1; /*****using z-index  property to stack element. the number 1 or -1 indicate the element
+      stay above or behind another***********/
+    }
+    /* designing for inside the dropdown*/
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: palevioletred;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+    </head>
+    <body>
+
+    <!-- creating the navigation. keep it in the bottom to run the link inside the drop down after the bar-->
+    <div class="navbar">
+      <a href="Index.html">Home</a>
+      <a href="https://www.vbgov.com/government/departments/parks-recreation/parks-trails/city-parks/pages/mount-trashmore-park.aspx "> Parks</a>
+      <a href= " https://www.opentable.com/landmark/restaurants-near-virginia-beach-boardwalk  "> Places to Eat</a>
+      <a href= " https://www.dcr.virginia.gov/state-parks/first-landing ">Hiking</a>
+      <a href= " https://www.vabeach.com/virginia-beach-history/"> About VB</a>
+      <a href= "https://militaryaviationmuseum.org/  "> Museum</a>
+      <a href = "#"></a>
+      <a href= " https://huntclubfarm.com/ "> Children Activities</a>
+      <a href= "More Info.html">My Next Page</a>
+      <div class="dropdown">
+        <button class="dropbtn">Beaches 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://www.expedia.com/Virginia-Beach-Hotels-Oceanfront-Hotels.0-0-d10271-tOceanfrontHotels.Travel-Guide-Filter-Hotels  ">Hotels</a>
+          <a href=" https://www.virginiabeach.com/listing/attractions/virginia-beach-oceanfront ">Oceanfont</a>
+          <a href="https://www.visitvirginiabeach.com/explore/beaches-districts/sandbridge/ ">Sandbridge Beach</a>
+        </div>
+      </div> 
+    </div>
+    
+    <h5 style="font-style: oblique;">Please Select Beaches to see more details</h5>
+    <br>
+    
+    <p style= "text-align: left; margin-left: 10%; margin-right:10%;color:darkcyan; font-weight: bold;">
+      Virginia Beach is a coastal city in southern Virginia. 
+      The city has several beautiful beaches such as Oceanfront, Sanbridge, First Landing beach, and more.
+      There are many unique activites to do in the area including military airshow, Aviation museum, and hiking.
+      The city also has several farms that open year round for picking fruits/vetgetables and petting farm where children can pet animals and play other unique farm activities.
+     Virinia Beach is home to the largest active military population in the US, over 91,000 (Virginia Beach Economic Development).
+    </p>
+    <br>
+    <p style= "font-style: italic; text-align: center; color: blue;">Click the images below to see more info</p>
+
+   <!-- Add an hyperlink to an image and align in columns-->
+   <!--reference:https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_link-->
+    
+
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .column{
+        float:left;
+        width:33.33%;
+        padding:5px;
+      }
+      .row::after{
+        content:"";
+        clear:both;
+        display:table;
+      }
+
+    </style>  
+    
+    <div class= "row">
+      <div class= "column">
+        <p><a href="More Info.html">
+          <img src="Oceanfont.jpg" alt="More Info.html" width="350" height="370">
+          </a></p>
+          <p style= " font-size: 15px; color:red;">Click the image above to go to my next page
+            <br>
+            or select "My Next Page" on the navigation bar on top</p>
+
+      </div>
+      <div class= "column"> 
+        <p><a href="https://www.oceanaairshow.com/">
+          <img src="airshow.jpg" alt="oceanaairshow.com" width="350" height="370">
+          </a></p>
+          <p style= "font-size: 12px;"> Click the image above to go to see details about airshows</p>
+
+      </div>
+
+      <div class= "column">
+        <p><a href="https://mrc.virginia.gov/vsrfdf/sandbridgeLIFP.shtm/">
+          <img src="fishing.jpg" alt="mrc.virginia.gov" width="350" height="370">
+          </a></p>
+          <p style= "font-size: 12px;"> Click the image above to learn about fishing in VA</p>
+      </div>
+
+    </div>
+</body>
+</html>
